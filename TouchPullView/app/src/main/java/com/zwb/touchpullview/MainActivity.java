@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                         float radio = dy / mMaxHeight;
                         tpv.setmRatio(radio);
                         break;
+                    case MotionEvent.ACTION_UP:
+                        tpv.resetRatio();
+                        break;
                 }
                 return true;
             }
